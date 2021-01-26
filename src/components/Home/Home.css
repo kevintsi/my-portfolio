@@ -1,0 +1,91 @@
+.home-container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.introduction-container div {
+  padding-left: 13%;
+  font-size: 60pt;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+.home-right-div {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 90%;
+}
+
+.home-right-div div {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.home-left-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 50%;
+  height: 90%;
+}
+
+.home-left-div > div {
+  text-align: center;
+}
+
+.contact-button {
+  font-size: 33%;
+  width: 26%;
+  padding: 2%;
+  background: #d91e18;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+.social-network-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-network-container > div {
+  padding: 0;
+  padding-right: 2%;
+  font-size: 12pt;
+}
+
+.contact-button-container {
+  padding-bottom: 5%;
+  display: flex;
+}
+
+.contact-button {
+  border-style: none;
+}
+.contact-button:focus {
+  outline: none;
+}
+
+.contact-button:hover {
+  animation: buttonTextEffect 1s linear 0s 1 reverse running;
+}
+
+@keyframes buttonTextEffect {
+  from {
+    color: rgb(255, 255, 255, 100%);
+  }
+  to {
+    color: rgb(255, 255, 255, 0%);
+  }
+}

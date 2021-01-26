@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
+import Routes from './components/Routes';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="main-container">
       <Router>
         <NavBar />
+        <Routes />
       </Router>
     </div>
   );
