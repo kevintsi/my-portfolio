@@ -46,10 +46,6 @@
   box-shadow: -1px -2px 0px #ffffff;
 }
 
-.nav-right ul a:active {
-  box-shadow: inset 0px -3px 0px rgb(32, 139, 0);
-}
-
 .nav-right {
   width: 80%;
 }
@@ -69,4 +65,8 @@
   color: #d91e18;
   font-weight: bold;
   font-size: 25pt;
+}
+
+.activeLink {
+  border-bottom: 3px solid #d91e18;
 }

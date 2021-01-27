@@ -3,17 +3,26 @@ import NavBar from './components/NavBar/NavBar';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
-import Routes from './components/Routes';
+import Routes from './components/Routes/Routes';
+import React, { createContext, useState } from "react";
 
+export const Context = createContext();
 
-function App() {
+const App = () => {
+
+  const [language, setLanguage] = useState("FR")
+
+  const onLanguageChange = (e) => {
+    setLanguage(e.target.value);
+  }
+
   return (
-    <div className="main-container">
+    <Context.Provider value={{ language, onLanguageChange }}>
       <Router>
         <NavBar />
         <Routes />
       </Router>
-    </div>
+    </Context.Provider>
   );
 }
 

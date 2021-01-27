@@ -10,10 +10,11 @@
   padding-left: 13%;
   font-size: 60pt;
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
   text-align: left;
 }
 
-.home-right-div {
+.home-right {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -23,12 +24,12 @@
   height: 90%;
 }
 
-.home-right-div div {
+.home-right div {
   border-radius: 50%;
   border: 1px solid black;
 }
 
-.home-left-div {
+.home-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +39,7 @@
   height: 90%;
 }
 
-.home-left-div > div {
+.home-left > div {
   text-align: center;
 }
 
@@ -66,7 +67,8 @@
 }
 
 .contact-button-container {
-  padding-bottom: 5%;
+  margin-bottom: 8%;
+  margin-top: 5%;
   display: flex;
 }
 
@@ -88,4 +90,13 @@
   to {
     color: rgb(255, 255, 255, 0%);
   }
+}
+
+.social-network-container > div > img {
+  height: 40px;
+}
+
+.social-network-container > div > img:hover {
+  filter: invert(19%) sepia(82%) saturate(3300%) hue-rotate(5deg)
+    brightness(93%) contrast(112%);
 }
