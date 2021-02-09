@@ -18,10 +18,11 @@ const Home = () => {
             "intro_last_part": "Developer"
         }
     }
+
     return (
         <div className="home-container fade">
             <div className="home-left">
-                <div className="introduction-container">
+                <div className="brief-introduction-container">
                     <div>{translation[language].intro_first_part}</div>
                     <div>{translation[language].intro_second_part}<strong style={{ color: "#D91E18" }}>Kévin</strong></div>
                     <div>{translation[language].intro_last_part}</div>

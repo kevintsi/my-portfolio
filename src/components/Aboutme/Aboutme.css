@@ -1,17 +1,60 @@
 .about-me-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  height: 90%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.about-me-container > div {
+.introduction-container {
+  height: 30%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.introduction-container h2 {
+  margin-top: 30px;
+}
+
+.introduction-container div {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.cursus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
   width: 100%;
+}
+
+.cursus-school {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+.cursus-school::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: gray;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
 
 .about-me-right {
@@ -23,4 +66,22 @@
 .about-me-left {
   text-align: center;
   width: 50%;
+}
+
+/* Place the container to the left */
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 25%;
+}
+
+/* Place the container to the right */
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 25%;
 }

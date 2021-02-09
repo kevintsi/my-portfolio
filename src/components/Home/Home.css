@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.introduction-container div {
+.brief-introduction-container div {
   padding-left: 13%;
   font-size: 60pt;
   font-family: "Poppins", sans-serif;
@@ -81,6 +81,7 @@
 
 .contact-button:hover {
   animation: buttonTextEffect 1s linear 0s 1 reverse running;
+  box-shadow: 0px 0px 8px black;
 }
 
 @keyframes buttonTextEffect {
@@ -99,4 +100,5 @@
 .social-network-container > div > img:hover {
   filter: invert(19%) sepia(82%) saturate(3300%) hue-rotate(5deg)
     brightness(93%) contrast(112%);
+  cursor: pointer;
 }
