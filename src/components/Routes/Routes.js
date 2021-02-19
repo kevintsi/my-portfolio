@@ -3,11 +3,13 @@ import { Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import Aboutme from "../Aboutme/Aboutme";
 import Home from "../Home/Home";
+import Skills from "../Skills/Skills";
 import "./Routes.css"
 
 const routes = [
     { path: "/", name: "Home", Component: Home },
-    { path: "/about-me", name: "About_me", Component: Aboutme }
+    { path: "/about-me", name: "About_me", Component: Aboutme },
+    { path: "/skills", name: "Skills", Component: Skills }
 ]
 const Routes = () => {
 
