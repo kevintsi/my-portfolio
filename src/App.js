@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import Routes from './components/Routes/Routes';
 import React, { createContext, useState } from "react";
-import Footer from './components/Footer/Footer';
 
 export const Context = createContext();
 
@@ -22,7 +21,6 @@ const App = () => {
       <Router>
         <NavBar />
         <Routes />
-        {/* <Footer /> */}
       </Router>
     </Context.Provider>
   );

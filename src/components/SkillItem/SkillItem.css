@@ -1,0 +1,14 @@
+.skill-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.skill-container > div + div {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
