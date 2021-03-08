@@ -19,17 +19,17 @@
   width: 90%;
 }
 
-.skills-main-container > div {
-  /* border: 1px solid black; */
-  height: 99%;
-  text-decoration: underline;
-}
-
 .category-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.category-name {
+  font-size: large;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 img {

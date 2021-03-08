@@ -10,5 +10,8 @@
 .skill-container > div + div {
   width: 100%;
   text-align: center;
-  text-decoration: underline;
+}
+
+.skill-name {
+  font-style: italic;
 }

@@ -12,16 +12,21 @@ const Skills = () => {
         { name: "Android", imgSrc: "images/android.png" }
     ]
 
-    const software_skills = [
+    const others_skills = [
         { name: "C#", imgSrc: "images/csharp.png" },
         { name: "Python", imgSrc: "images/python.png" }
     ]
+
+    const containerization_skills = [
+        { name: "Docker", imgSrc: "images/docker.png" }
+    ]
+
     return (
         <div className="skills-container fade">
             <div><h2>Compétences</h2></div>
             <div className="skills-main-container">
                 <div className="category-container">
-                    <div>Web</div>
+                    <div className="category-name">Web</div>
                     <div className="list-skills">
                         {web_skills.map(skill => (
                             <SkillItem key={skill.name} skill={skill} />
@@ -29,7 +34,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className="category-container">
-                    <div>Mobile</div>
+                    <div className="category-name">Mobile</div>
                     <div className="list-skills">
                         {mobile_skills.map(skill => (
                             <SkillItem key={skill.name} skill={skill} />
@@ -37,9 +42,17 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className="category-container">
-                    <div>Logiciel</div>
+                    <div className="category-name">Autres langages</div>
                     <div className="list-skills">
-                        {software_skills.map(skill => (
+                        {others_skills.map(skill => (
+                            <SkillItem key={skill.name} skill={skill} />
+                        ))}
+                    </div>
+                </div>
+                <div className="category-container">
+                    <div className="category-name">Conteneurisation</div>
+                    <div className="list-skills">
+                        {containerization_skills.map(skill => (
                             <SkillItem key={skill.name} skill={skill} />
                         ))}
                     </div>
