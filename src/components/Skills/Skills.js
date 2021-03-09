@@ -21,6 +21,15 @@ const Skills = () => {
         { name: "Docker", imgSrc: "images/docker.png" }
     ]
 
+    const sgbd_skills = [
+        {
+            name: "PostgreSQL", imgSrc: "images/postgresql.png"
+        }, {
+
+            name: "SQL server", imgSrc: "images/sqlserver.png"
+        }
+    ]
+
     return (
         <div className="skills-container fade">
             <div><h2>Compétences</h2></div>
@@ -53,6 +62,14 @@ const Skills = () => {
                     <div className="category-name">Conteneurisation</div>
                     <div className="list-skills">
                         {containerization_skills.map(skill => (
+                            <SkillItem key={skill.name} skill={skill} />
+                        ))}
+                    </div>
+                </div>
+                <div className="category-container">
+                    <div className="category-name">SGBD</div>
+                    <div className="list-skills">
+                        {sgbd_skills.map(skill => (
                             <SkillItem key={skill.name} skill={skill} />
                         ))}
                     </div>
