@@ -21,7 +21,7 @@ const NavBar = () => {
     return (
         <nav className="nav-container">
             <div className="nav-left">
-                <span className="port">Port</span><span className="folio">folio</span>
+                <NavLink to="/" className="portfolio" exact><span className="port">Port</span><span className="folio">folio</span></NavLink>
             </div>
             <div className="nav-right">
                 <ul>

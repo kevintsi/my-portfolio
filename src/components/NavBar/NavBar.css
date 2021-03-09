@@ -70,3 +70,7 @@
 .activeLink {
   border-bottom: 3px solid #d91e18;
 }
+
+.portfolio {
+  text-decoration: none;
+}
