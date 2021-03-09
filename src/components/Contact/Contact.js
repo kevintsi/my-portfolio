@@ -8,12 +8,12 @@ const Contact = () => {
             <div className="contact-main-container">
                 <form className="form-container">
                     <div>
-                        <input type="text" required />
+                        <input type="text" placeholder="Phil Anthrope" required />
                         <label>Nom</label>
                     </div>
 
                     <div>
-                        <input type="email" required />
+                        <input type="email" placeholder="phil.anthrope@gmail.com" required />
                         <label>Email</label>
                     </div>
                     <div>
