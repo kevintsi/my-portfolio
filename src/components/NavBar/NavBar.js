@@ -10,12 +10,16 @@ const NavBar = () => {
         "FR": {
             "home": "Accueil",
             "about_me": "A propos de moi",
-            "skills": "Compétences"
+            "skills": "Compétences",
+            "projects": "Projets",
+            "contact": "Contact"
         },
         "EN": {
             "home": "Home",
             "about_me": "About me",
-            "skills": "Skills"
+            "skills": "Skills",
+            "projects": "Projects",
+            "contact": "Contact"
         }
     }
     return (
@@ -27,8 +31,9 @@ const NavBar = () => {
                 <ul>
                     <NavLink activeClassName="activeLink" to="/" exact><li>{translation[language].home}</li></NavLink>
                     <NavLink activeClassName="activeLink" to="/about-me"><li> {translation[language].about_me}</li></NavLink>
+                    <NavLink activeClassName="activeLink" to="/projects"><li>{translation[language].projects}</li></NavLink>
                     <NavLink activeClassName="activeLink" to="/skills"><li>{translation[language].skills}</li></NavLink>
-                    <NavLink activeClassName="activeLink" to="/contact"><li>Contact</li></NavLink>
+                    <NavLink activeClassName="activeLink" to="/contact"><li>{translation[language].contact}</li></NavLink>
                     <select value={language} onChange={(e) => onLanguageChange(e)}>
                         <option value="FR">FR</option>
                         <option value="EN">EN</option>
