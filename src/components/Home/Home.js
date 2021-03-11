@@ -20,7 +20,7 @@ const Home = () => {
     }
 
     return (
-        <div className="home-container fade">
+        <div className="home-container fade" id="home">
             <div className="home-left">
                 <div className="brief-introduction-container">
                     <div>{translation[language].intro_first_part}</div>

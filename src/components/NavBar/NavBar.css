@@ -3,8 +3,21 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  top: 0;
+  background-color: #ffffff;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
   height: 10%;
   width: 100%;
+  position: fixed;
+}
+
+.nav-hidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: 0.2s transform cubic-bezier(0.3, 0.73, 0.3, 0.74);
 }
 
 .nav-left {

@@ -18,7 +18,7 @@ const Aboutme = () => {
     }
 
     return (
-        <div className="about-me-container fade">
+        <div className="about-me-container fade" id="about-me">
             <div className="introduction-container">
                 <h2>Présentation</h2>
                 <div>
