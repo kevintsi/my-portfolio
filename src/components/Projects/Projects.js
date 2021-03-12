@@ -3,7 +3,7 @@ import "./Projects.css"
 
 const Projects = () => {
     return (
-        <div className="projects-container fade">
+        <div className="projects-container" id="projects">
             <div><h2>Mes projets professionnels</h2></div>
             <div>
 

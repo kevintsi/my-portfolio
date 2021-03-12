@@ -6,10 +6,11 @@ import "./NavBar.css";
 import useHideOnScrolled from "./useHideOnScroll";
 const NavBar = () => {
 
-    let lastScrollTop = 0;
+    // let lastScrollTop = 0;
     // const [hidden, setHidden] = useState(false);
     const hidden = useHideOnScrolled()
     const { language, onLanguageChange } = useContext(Context);
+    const [isMenuShown, setIsMenuShown] = useState(false)
     let translation = {
         "FR": {
             "home": "Accueil",
@@ -25,6 +26,10 @@ const NavBar = () => {
             "projects": "Projects",
             "contact": "Contact"
         }
+    }
+
+    const showMobileMenu = () => {
+        setIsMenuShown(!isMenuShown)
     }
 
     // useEffect(() => {
@@ -48,24 +53,43 @@ const NavBar = () => {
     // };
 
     return (
-        <nav className={!hidden ? "nav-container" : "nav-hidden"} >
-            <div className="nav-left">
-                <NavLink to="/" className="portfolio" exact><span className="port">Port</span><span className="folio">folio</span></NavLink>
-            </div>
-            <div className="nav-right">
+        <>
+            <div className={isMenuShown ? "menu-mobile menu-mobile-show" : "menu-mobile menu-mobile-hidden"}>
                 <ul>
-                    <NavHashLink smooth activeClassName="activeLink" to="/#home" exact><li>{translation[language].home}</li></NavHashLink>
-                    <NavHashLink smooth activeClassName="activeLink" to="/#about-me"><li> {translation[language].about_me}</li></NavHashLink>
-                    <NavHashLink smooth activeClassName="activeLink" to="/projects"><li>{translation[language].projects}</li></NavHashLink>
-                    <NavHashLink smooth activeClassName="activeLink" to="/skills"><li>{translation[language].skills}</li></NavHashLink>
-                    <NavHashLink smooth activeClassName="activeLink" to="/contact"><li>{translation[language].contact}</li></NavHashLink>
-                    <select value={language} onChange={(e) => onLanguageChange(e)}>
-                        <option value="FR">FR</option>
-                        <option value="EN">EN</option>
-                    </select>
+                    <NavHashLink onClick={() => showMobileMenu()} smooth activeClassName="activeLink" to="/#home" exact><li>{translation[language].home}</li></NavHashLink>
+                    <NavHashLink onClick={() => showMobileMenu()} smooth activeClassName="activeLink" to="/#about-me"><li> {translation[language].about_me}</li></NavHashLink>
+                    <NavHashLink onClick={() => showMobileMenu()} smooth activeClassName="activeLink" to="/#skills"><li>{translation[language].skills}</li></NavHashLink>
+                    <NavHashLink onClick={() => showMobileMenu()} smooth activeClassName="activeLink" to="/#projects"><li>{translation[language].projects}</li></NavHashLink>
+                    <NavHashLink onClick={() => showMobileMenu()} smooth activeClassName="activeLink" to="/#contact"><li>{translation[language].contact}</li></NavHashLink>
                 </ul>
             </div>
-        </nav>
+            <nav className="nav-mobile">
+                <img src="images/hamburger_menu.png" alt="menu" onClick={() => showMobileMenu()} />
+                <select value={language} onChange={(e) => onLanguageChange(e)}>
+                    <option value="FR">FR</option>
+                    <option value="EN">EN</option>
+                </select>
+                <NavLink to="/" className="portfolio" exact><span className="port">Port</span><span className="folio">folio</span></NavLink>
+            </nav>
+            <nav className={!hidden ? "nav-container" : "nav-hidden"} >
+                <div className="nav-left">
+                    <NavLink to="/" className="portfolio" exact><span className="port">Port</span><span className="folio">folio</span></NavLink>
+                </div>
+                <div className="nav-right">
+                    <ul>
+                        <NavHashLink smooth activeClassName="activeLink" to="/#home" exact><li>{translation[language].home}</li></NavHashLink>
+                        <NavHashLink smooth activeClassName="activeLink" to="/#about-me" exact><li>{translation[language].about_me}</li></NavHashLink>
+                        <NavHashLink smooth activeClassName="activeLink" to="/#skills" exact><li>{translation[language].skills}</li></NavHashLink>
+                        <NavHashLink smooth activeClassName="activeLink" to="/#projects" exact><li>{translation[language].projects}</li></NavHashLink>
+                        <NavHashLink smooth activeClassName="activeLink" to="/#contact" exact><li>{translation[language].contact}</li></NavHashLink>
+                        <select value={language} onChange={(e) => onLanguageChange(e)}>
+                            <option value="FR">FR</option>
+                            <option value="EN">EN</option>
+                        </select>
+                    </ul>
+                </div>
+            </nav>
+        </>
     )
 }
 

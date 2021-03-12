@@ -18,21 +18,20 @@ const Aboutme = () => {
     }
 
     return (
-        <div className="about-me-container fade" id="about-me">
-            <div className="introduction-container">
-                <h2>Présentation</h2>
-                <div>
-                    <div className="about-me-left">
-                        <div>Photo</div>
-                    </div>
-                    <div className="about-me-right">
-                        <div>
-                            {translation[language].introduction}
-                        </div>
+        // <div className="about-me-container" id="about-me">
+        <div className="introduction-container" id="about-me">
+            <h1>Présentation</h1>
+            <div>
+                <div className="about-me-left">
+                    <div><img src="images/Photo_cv.jpg" alt="Photo CV" /></div>
+                </div>
+                <div className="about-me-right">
+                    <div>
+                        {translation[language].introduction}
                     </div>
                 </div>
             </div>
-            <div className="cursus-container">
+            {/* <div className="cursus-container">
                 <h2>Cursus Scolaire</h2>
                 <div className="cursus-school">
                     <div className="left">
@@ -96,8 +95,9 @@ const Aboutme = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
+        //</div>
     )
 }
 
