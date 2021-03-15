@@ -1,23 +1,38 @@
 .home-container {
   height: 90%;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  display: grid;
+  grid-template-rows: 35% 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding-top: 40%;
-  padding-bottom: 39%;
+  padding-bottom: 70%;
 }
 
-.brief-introduction-container div {
-  padding-left: 13%;
-  font-size: 1.5em;
+.brief-introduction-container {
+  padding-bottom: 20%;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
   font-family: "Poppins", sans-serif;
+  align-items: center;
   font-weight: 700;
-  text-align: left;
+  grid-row: 1;
+  grid-column: 1/3;
+  width: 100%;
+}
+
+.brief-introduction-container:nth-last-child() {
+  width: 74%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  padding-top: 21px;
 }
 
 .photo-cv {
-  height: 12em;
+  padding-right: 9%;
+  height: 20em;
   border-radius: 35% 45% 52% 25%;
 }
 
@@ -52,9 +67,9 @@
 }
 
 .contact-button {
-  width: 35%;
+  width: 5em;
+  padding: 9%;
   font-size: 0.5em;
-  padding: 2%;
   background: #d91e18;
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -63,10 +78,13 @@
 
 .social-network-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 2/4;
+  justify-content: center;
+  height: 100%;
   align-items: center;
-  padding-top: 20%;
+  width: 100%;
 }
 
 .social-network-container > div {
@@ -77,8 +95,10 @@
 
 .contact-button-container {
   margin-bottom: 8%;
-  margin-top: 5%;
+  margin-top: 35%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-button {
@@ -114,4 +134,49 @@
   filter: invert(19%) sepia(82%) saturate(3300%) hue-rotate(5deg)
     brightness(93%) contrast(112%);
   cursor: pointer;
+}
+
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 2/4;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .home-container {
+    padding-top: 29%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brief-introduction-container {
+    grid-row: 1;
+    padding-bottom: 9%;
+    grid-column: 1;
+    font-size: 2.5em;
+    align-items: flex-start;
+    padding-left: 3%;
+  }
+
+  .social-network-container {
+    padding-left: 4%;
+    flex-direction: row;
+    grid-row: 2;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .photo-container {
+    align-items: flex-start;
+    justify-content: center;
+    grid-row: 1/3;
+  }
+
+  .photo-cv {
+    height: 27em;
+    padding-right: 5%;
+  }
 }

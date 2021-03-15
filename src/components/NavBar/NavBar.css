@@ -96,6 +96,9 @@
   font-size: medium;
   font-family: "Poppins", sans-serif;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   box-shadow: 0px -2px 5px black;
   top: 0;
   background-color: #ffffff;
@@ -135,7 +138,7 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 .menu-mobile-hidden {
-  top: -104%;
+  top: -150%;
 }
 
 .menu-mobile li {
@@ -152,4 +155,29 @@
 
 .menu-mobile ul a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    font-size: 1.5em;
+  }
+
+  .menu-mobile ul li {
+    padding: 10%;
+    text-align: center;
+  }
+
+  .menu-mobile ul {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 988px) {
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+  }
 }

@@ -21,15 +21,10 @@ const Aboutme = () => {
         // <div className="about-me-container" id="about-me">
         <div className="introduction-container" id="about-me">
             <h1>Présentation</h1>
-            <div>
-                <div className="about-me-left">
-                    <div><img src="images/Photo_cv.jpg" alt="Photo CV" /></div>
-                </div>
-                <div className="about-me-right">
-                    <div>
-                        {translation[language].introduction}
-                    </div>
-                </div>
+            <div className="introduction">
+                <p>
+                    {translation[language].introduction}
+                </p>
             </div>
             {/* <div className="cursus-container">
                 <h2>Cursus Scolaire</h2>

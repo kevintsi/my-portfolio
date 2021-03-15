@@ -30,13 +30,6 @@ h1 {
   margin-top: 30px;
 }
 
-.introduction-container div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 .cursus-container {
   display: flex;
   flex-direction: column;
@@ -67,20 +60,10 @@ h1 {
   margin-left: -3px;
 }
 
-.about-me-right {
-  text-align: left;
+.introduction {
   font-weight: bold;
-  width: 50%;
-  padding-left: 1em;
-}
-
-.about-me-right p {
-  font-size: 0.8em;
-}
-
-.about-me-left {
+  padding: 10.2%;
   text-align: center;
-  width: 45%;
 }
 
 /* Place the container to the left */
