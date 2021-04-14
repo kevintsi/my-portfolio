@@ -6,4 +6,20 @@
   align-items: center;
   font-family: "Poppins", sans-serif;
   width: 100%;
+  padding-bottom: 95%;
+}
+
+.projects-container > h1 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
 }

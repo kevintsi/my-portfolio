@@ -8,6 +8,11 @@
   width: 100%;
 }
 
+.skills-container > h1 {
+  padding-bottom: 20%;
+  padding-top: 15%;
+}
+
 #skills {
   padding-bottom: 30%;
 }
@@ -20,10 +25,6 @@
   padding-top: 4%;
   padding-bottom: 30%;
   width: 90%;
-}
-
-h1 {
-  padding-bottom: 20%;
 }
 
 .category-container {
@@ -50,4 +51,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .skills-container > h1 {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }

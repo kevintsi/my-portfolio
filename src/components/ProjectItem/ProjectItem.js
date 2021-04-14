@@ -1,9 +1,10 @@
 import { React } from "react"
 
-const ProjectItem = () => {
+const ProjectItem = ({ project }) => {
     return (
-        <div>
-
+        <div className="card-project">
+            <h4>{project.name}</h4>
+            <div><a href={project.github_link}><img src="images/github.png" alt="Cliquez dessus pour accéder au github" /></a></div>
         </div>
     )
 }

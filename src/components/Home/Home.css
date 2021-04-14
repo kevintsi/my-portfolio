@@ -4,8 +4,8 @@
   display: grid;
   grid-template-rows: 35% 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  padding-top: 40%;
-  padding-bottom: 70%;
+  padding-top: 25%;
+  padding-bottom: 15%;
 }
 
 .brief-introduction-container {
@@ -31,9 +31,8 @@
 }
 
 .photo-cv {
-  padding-right: 9%;
-  height: 20em;
-  border-radius: 35% 45% 52% 25%;
+  height: 18em;
+  border-radius: 100%;
 }
 
 .home-right {
@@ -178,5 +177,20 @@
   .photo-cv {
     height: 27em;
     padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-container {
+    padding-top: 15%;
+    width: 80%;
+  }
+
+  .brief-introduction-container {
+    font-size: 4em;
+  }
+
+  .photo-cv {
+    height: 35em;
   }
 }

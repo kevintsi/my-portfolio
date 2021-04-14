@@ -34,8 +34,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="social-network-container">
-                <div><img src="/images/linkedIn.png" alt="LinkedIn" /></div>
-                <div><img src="/images/github.png" alt="Github" /></div>
+                <div><a href="https://www.linkedin.com/in/k%C3%A9vin-tsi-160381181/"><img src="/images/linkedIn.png" alt="LinkedIn" /></a></div>
+                <div><a href="https://github.com/kevintsi"><img src="/images/github.png" alt="Github" /></a></div>
             </div>
             {/* </div> */}
             {/* <div className="home-right"> */}
