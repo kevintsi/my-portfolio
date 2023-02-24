@@ -1,98 +1,44 @@
-import React, { useContext } from "react";
+import React from "react";
+import SkillItem from "../SkillItem/SkillItem";
 import "./Aboutme.css"
-import { Context } from "../../App"
 
 const Aboutme = () => {
 
-    const { language } = useContext(Context);
+    const skills = [
+        "React.js",
+        "Python",
+        "Docker",
+        "Git",
+        "Node.js",
+        "SQL",
+        "Linux",
+        "Windows",
+        "Express.js"
+    ]
 
-    let translation = {
-        "FR": {
-            "introduction": "Je me présente, Kévin TSI , 22 ans et actuellement en 1ère année pour l'obtention d'un titre RNCP (Répertoire National des Certifications Professionnelles) pour devenir Expert Informatique \
-            (Bac +5) dans l'école d'informatique H3 Hitema.",
-        },
-        "EN": {
-            "introduction": "Hi, my name is Kévin TSI, I'm 22 years old and currently in my first year to get RNCP title which is an equivalent to Master degree\
-            in an the IT school H3 Hitema.",
-        }
-    }
 
     return (
-        // <div className="about-me-container" id="about-me">
-        <div className="introduction-container" id="about-me">
-            <h1>Présentation</h1>
-            <div className="introduction">
-                <p>
-                    {translation[language].introduction}
-                </p>
-            </div>
-            {/* <div className="cursus-container">
-                <h2>Cursus Scolaire</h2>
-                <div className="cursus-school">
-                    <div className="left">
-                        <div>
-                            <h2>2020 - Aujourd'hui</h2>
-                            <div>
-                                <h3>H3 Hitema</h3>
-                                <h4>Issy-les-Moulineaux</h4>
-                                <div>
-                                    Titre RNCP équivalent à Master
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="right">
-                        <div>
-                            <h2>2019 - 2020</h2>
-                            <div>
-                                <h3>H3 Hitema</h3>
-                                <h4>Issy-les-Moulineaux</h4>
-                                <div>
-                                    Bachelor RPI (Responsable de Projets Informatique)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="left">
-                        <div>
-                            <h2>2018 - 2019</h2>
-                            <div>
-                                <h3>Lycée polyvalent Maximilien Sorre</h3>
-                                <h4>Cachan</h4>
-                                <div>
-                                    BTS SIO option SLAM 2 ème année
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="right">
-                        <div>
-                            <h2>2017 - 2018</h2>
-                            <div>
-                                <h3>IUT d'Orsay</h3>
-                                <h4>Orsay</h4>
-                                <div>
-                                    1 ère année de DUT Informatique - Passerelle DUCES
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="left">
-                        <div>
-                            <h2>2016 - 2017</h2>
-                            <div>
-                                <h3>Lycée polyvalent Adolphe Chérioux</h3>
-                                <h4>Vitry sur Seine</h4>
-                                <div>
-                                    Baccalauréat STI2D option SIN - Mention Bien
-                                </div>
-                            </div>
-                        </div>
+        <section className="about-me-container" id="about-me">
+            <h1 className="about-me-title">Me concernant</h1>
+            <div>
+                <div className="introduction">
+                    <h2>Qui suis-je ?</h2>
+                    <p>
+                        Nulla irure ea consectetur quis excepteur labore sunt aliqua voluptate quis eiusmod ullamco dolor. Occaecat dolore deserunt Lorem aliqua officia ut nulla labore consectetur id. Voluptate ea aute voluptate irure velit reprehenderit cupidatat incididunt occaecat quis. Incididunt velit sunt sint fugiat cillum.
+
+                        Cillum nulla est consectetur esse dolore. Elit ex quis consectetur ipsum. Quis ex eu amet sunt irure reprehenderit. Sit voluptate magna qui deserunt aliqua. Nostrud sunt labore Lorem sint duis in. Sunt anim velit duis culpa qui ipsum ut proident excepteur est esse. Ad culpa irure velit eu magna mollit nulla in voluptate veniam elit amet minim.
+
+                        Proident mollit amet enim laboris id esse ullamco eu sit. Dolor elit minim sit quis in irure. Velit aliqua proident amet anim dolore non do laborum amet. Voluptate officia deserunt in occaecat deserunt aliqua veniam veniam aliqua. Minim esse pariatur qui nostrud.
+                    </p>
+                </div>
+                <div className="skills-container">
+                    <h2>Langages et technologies que je connais</h2>
+                    <div>
+                        {skills.map((skill, idx) => <SkillItem skill={skill} id={idx} />)}
                     </div>
                 </div>
-            </div> */}
-        </div>
-        //</div>
+            </div>
+        </section>
     )
 }
 

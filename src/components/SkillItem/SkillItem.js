@@ -1,12 +1,9 @@
 import React from "react";
 import "./SkillItem.css"
 
-const SkillItem = ({ skill: { name, imgSrc } }) => {
+const SkillItem = ({ skill, idx }) => {
     return (
-        <div className="skill-container">
-            <div><img alt={name} src={imgSrc} /></div>
-            <div className="skill-name">{name}</div>
-        </div>
+        <div id={idx} className="skill-item">{skill}</div>
     )
 }
 

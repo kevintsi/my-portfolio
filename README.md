@@ -1,5 +1,5 @@
 # Mon Portfolio
-
+![CI/CD](https://github.com/kevintsi/my-portfolio/workflows/Node.js\CI/badge.svg)
 ## Concernant ce portfolio
 
 Ce portfolio a été réalisé à l'aide de React.js, il répertorie mes projets, mon parcours scolaire et des informations me concernant.

@@ -1,47 +1,30 @@
-import React, { useContext } from "react";
+import React from "react";
 import { NavHashLink } from "react-router-hash-link";
-import { Context } from "../../App"
 import "./Home.css"
 
 
 const Home = () => {
-    const { language } = useContext(Context);
-
-    let translation = {
-        "FR": {
-            "intro_first_part": "Bonjour",
-            "intro_second_part": "Je m'appelle ",
-            "intro_last_part": "Développeur"
-        },
-        "EN": {
-            "intro_first_part": "Hi",
-            "intro_second_part": "My name is ",
-            "intro_last_part": "Developer"
-        }
-    }
 
     return (
-        <div className="home-container" id="home">
+        <section className="home-container" id="home">
             {/* <div className="home-left"> */}
             <div className="brief-introduction-container">
-                <div>
-                    <div>{translation[language].intro_first_part}</div>
-                    <div>{translation[language].intro_second_part}<strong style={{ color: "#D91E18" }}>Kévin</strong></div>
-                    <div>{translation[language].intro_last_part}</div>
+                <div className="heading" >
+                    <div className="primary-heading">Bonjour, je m'appelle <strong style={{ color: "#D91E18" }}>Kévin</strong></div>
+                    <p className="secondary-heading">Développeur Web FullStack orienté Backend</p>
+                </div>
+                <div className="social-network-container">
+                    <div><a href="https://www.linkedin.com/in/k%C3%A9vin-tsi-160381181/"><img src={process.env.PUBLIC_URL + "/images/linkedIn.png"} alt="LinkedIn" /></a></div>
+                    <div><a href="https://github.com/kevintsi"><img src={process.env.PUBLIC_URL + "/images/github.png"} alt="Github" /></a></div>
                 </div>
                 <div>
                     <NavHashLink smooth className="contact-button-link" to="/#contact"><div className="contact-button-container"><input className="contact-button" type="button" value="Contact" /></div></NavHashLink>
                 </div>
             </div>
-            <div className="social-network-container">
-                <div><a href="https://www.linkedin.com/in/k%C3%A9vin-tsi-160381181/"><img src="/images/linkedIn.png" alt="LinkedIn" /></a></div>
-                <div><a href="https://github.com/kevintsi"><img src="/images/github.png" alt="Github" /></a></div>
-            </div>
             {/* </div> */}
             {/* <div className="home-right"> */}
-            <div className="photo-container"><img className="photo-cv" src="images/Photo_cv.jpg" alt="Photo CV" /></div>
             {/* </div> */}
-        </div>
+        </section>
     )
 }
 
