@@ -20,15 +20,16 @@ const Aboutme = () => {
     return (
         <section className="about-me-container" id="about-me">
             <h1 className="about-me-title">Me concernant</h1>
+            <p className="about-me-summary">Ici vous trouverez plus d'informations me concernant, qu'est-ce que je fais, langages de programmations et technologies que je connais.</p>
             <div>
                 <div className="introduction">
                     <h2>Qui suis-je ?</h2>
                     <p>
-                        Nulla irure ea consectetur quis excepteur labore sunt aliqua voluptate quis eiusmod ullamco dolor. Occaecat dolore deserunt Lorem aliqua officia ut nulla labore consectetur id. Voluptate ea aute voluptate irure velit reprehenderit cupidatat incididunt occaecat quis. Incididunt velit sunt sint fugiat cillum.
-
-                        Cillum nulla est consectetur esse dolore. Elit ex quis consectetur ipsum. Quis ex eu amet sunt irure reprehenderit. Sit voluptate magna qui deserunt aliqua. Nostrud sunt labore Lorem sint duis in. Sunt anim velit duis culpa qui ipsum ut proident excepteur est esse. Ad culpa irure velit eu magna mollit nulla in voluptate veniam elit amet minim.
-
-                        Proident mollit amet enim laboris id esse ullamco eu sit. Dolor elit minim sit quis in irure. Velit aliqua proident amet anim dolore non do laborum amet. Voluptate officia deserunt in occaecat deserunt aliqua veniam veniam aliqua. Minim esse pariatur qui nostrud.
+                        Bonjour, je suis un <b>Développeur FullStack orienté Backend</b>. Vous pouvez voir quelques uns de mes projets dans la section <b>Projets</b>.
+                    </p>
+                    <p>
+                        Je suis ouvert aux nouvelles opportunités où je pourrais <b>contribuer</b>, <b>apprendre</b> et <b>grandir</b> en tant que développeur. Si vous avez des opportunités qui correspondent avec mes compétences
+                        et expérience, n'hésitez pas à me contacter.
                     </p>
                 </div>
                 <div className="skills-container">

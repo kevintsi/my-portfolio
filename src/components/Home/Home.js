@@ -10,7 +10,7 @@ const Home = () => {
             {/* <div className="home-left"> */}
             <div className="brief-introduction-container">
                 <div className="heading" >
-                    <div className="primary-heading">Bonjour, je m'appelle <strong style={{ color: "#D91E18" }}>Kévin</strong></div>
+                    <div className="primary-heading">Bonjour, je m'appelle <strong style={{ color: "#D91E18" }}>Kévin TSI</strong></div>
                     <p className="secondary-heading">Développeur Web FullStack orienté Backend</p>
                 </div>
                 <div className="social-network-container">

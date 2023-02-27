@@ -12,6 +12,8 @@ const NavBar = () => {
         setIsMenuShown(!isMenuShown)
     }
 
+    console.log(!scrollDirection)
+
     return (
         <>
             <div className={isMenuShown ? "menu-mobile menu-mobile-show" : "menu-mobile menu-mobile-hidden"}>
@@ -26,7 +28,7 @@ const NavBar = () => {
                 <img src={process.env.PUBLIC_URL + "/images/hamburger_menu.png"} alt="menu" onClick={() => showMobileMenu()} />
                 <NavLink to="/" className="portfolio" exact><span className="port">Port</span><span className="folio">folio</span></NavLink>
             </nav>
-            <nav className={scrollDirection === "down" ? "nav-container" : "nav-hidden"} >
+            <nav className={scrollDirection === "down" || !scrollDirection ? "nav-container" : "nav-hidden"} >
                 <div className="nav-left">
                     <NavLink to="/" className="portfolio" exact><span className="port">Port</span><span className="folio">folio</span></NavLink>
                 </div>
