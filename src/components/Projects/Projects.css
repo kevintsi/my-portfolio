@@ -9,6 +9,11 @@
 .projects-title {
   font-size: 4rem;
   position: relative;
+  text-align: center;
+}
+
+p {
+  text-align: center;
 }
 
 .projects-title::after {
@@ -45,4 +50,26 @@
   padding-left: 50px;
   padding-right: 50px;
   text-align: center;
+}
+
+@media screen and (max-width: 506px) {
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .introduction h2 {
+    font-size: 1rem;
+  }
+
+  .skills-container h2 {
+    font-size: 1rem
+  }
+
+  .skills-container div {
+    font-size: 1rem;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
