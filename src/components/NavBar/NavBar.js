@@ -11,9 +11,6 @@ const NavBar = () => {
     const showMobileMenu = () => {
         setIsMenuShown(!isMenuShown)
     }
-
-    console.log(!scrollDirection)
-
     return (
         <>
             <div className={isMenuShown ? "menu-mobile menu-mobile-show" : "menu-mobile menu-mobile-hidden"}>

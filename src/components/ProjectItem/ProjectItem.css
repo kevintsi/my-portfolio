@@ -9,3 +9,13 @@
 .card-project div>a>img {
     width: 50px;
 }
+
+.project-skills-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}

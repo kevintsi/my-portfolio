@@ -16,7 +16,9 @@
   justify-content: flex-start;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  padding-bottom: 0px;
   width: 100%;
+  margin-bottom: 0px;
 }
 
 .form-container {
@@ -27,32 +29,33 @@
   align-items: center;
 }
 
-.form-container > div {
+.form-container>div {
   width: 80%;
   padding-bottom: 5%;
   position: relative;
 }
 
-.form-container > div > label {
+.form-container>div>label {
   position: absolute;
   left: 8px;
 }
 
-input[type="text"] + label,
-input[type="email"] + label {
+input[type="text"]+label,
+input[type="email"]+label {
   bottom: 60%;
   transition: all 0.2s;
   touch-action: manipulation;
 }
 
-input:not(:placeholder-shown) + label,
-input:focus + label {
+input:not(:placeholder-shown)+label,
+input:focus+label {
   font-size: smaller;
   color: #d91e18;
   bottom: 80px;
   left: 4px;
   opacity: 0.5;
 }
+
 ::-webkit-input-placeholder {
   opacity: 0;
   transition: inherit;
@@ -62,7 +65,7 @@ input:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-textarea:focus + label {
+textarea:focus+label {
   display: none;
 }
 
@@ -97,10 +100,11 @@ textarea {
 
 input[type="submit"] {
   outline: none;
-  border-radius: 5px;
-  height: 2em;
-  font-size: medium;
+  border-radius: 15px;
+  height: 3em;
+  font-size: x-large;
   cursor: pointer;
+  font-family: "Poppins";
   border-style: none;
   color: rgb(255, 255, 255);
   background: #d91e18;
@@ -111,13 +115,14 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 768px) {
-  input[type="text"] + label,
-  input[type="email"] + label {
+
+  input[type="text"]+label,
+  input[type="email"]+label {
     bottom: 70%;
   }
 
-  input:not(:placeholder-shown) + label,
-  input:focus + label {
+  input:not(:placeholder-shown)+label,
+  input:focus+label {
     bottom: 100%;
     left: 4px;
     opacity: 0.5;
@@ -125,15 +130,24 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .form-container > div {
+  .form-container>div {
     padding-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
+
   input[type="text"],
   input[type="email"],
   textarea {
     margin-bottom: 6%;
+  }
+}
+
+@media screen and (max-width:425px) {
+
+  input[type="submit"] {
+
+    font-size: medium;
   }
 }

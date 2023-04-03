@@ -20,8 +20,8 @@ const Aboutme = () => {
     return (
         <section id="about-me">
             <div className="about-me-container">
-                <h1 className="about-me-title">Me concernant</h1>
-                <p className="about-me-summary">Ici vous trouverez plus d'informations me concernant, qu'est-ce que je fais, langages de programmations et technologies que je connais.</p>
+                <h1 className="section-title">Me concernant</h1>
+                <p className="about-me-summary">Ici vous trouverez plus d'informations me concernant, ce que je fais, les langages de programmations et technologies que je connais.</p>
                 <div>
                     <div className="introduction">
                         <h2>Qui suis-je ?</h2>

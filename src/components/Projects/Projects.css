@@ -2,14 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 95%;
-  background-color: rgba(0, 0, 0, 3%)
-}
-
-.projects-title {
-  font-size: 4rem;
-  position: relative;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 3%);
+  padding-bottom: 10%;
 }
 
 p {
@@ -47,8 +41,6 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  padding-left: 50px;
-  padding-right: 50px;
   text-align: center;
 }
 
