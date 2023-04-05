@@ -4,8 +4,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
-  width: 80%;
+  padding-bottom: 5%;
+  width: 100%;
 }
 
 .about-me-container {
@@ -13,7 +13,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 50%;
 }
 
 .about-me-container>div {
@@ -24,7 +24,6 @@ section {
 
 .section-title {
   font-size: 4rem;
-  position: relative;
   text-align: center;
 }
 
@@ -56,9 +55,6 @@ section {
   padding-bottom: 20px;
 }
 
-.skills-container {
-  width: 50%;
-}
 
 .skills-container>div {
   display: grid;
@@ -73,29 +69,19 @@ section {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1510px) {
   .about-me-container>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between
   }
-}
 
-@media screen and (max-width: 506px) {
   .section-title {
     font-size: 2rem;
   }
 
-  .introduction h2 {
-    font-size: 1rem;
-  }
-
-  .skills-container h2 {
-    font-size: 1rem
-  }
-
   .skills-container div {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
   }
 }

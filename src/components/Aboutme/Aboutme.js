@@ -36,7 +36,7 @@ const Aboutme = () => {
                     <div className="skills-container">
                         <h2>Langages et technologies que je connais</h2>
                         <div>
-                            {skills.map((skill, idx) => <SkillItem skill={skill} id={idx} />)}
+                            {skills.map((skill, idx) => <SkillItem key={idx} skill={skill} />)}
                         </div>
                     </div>
                 </div>

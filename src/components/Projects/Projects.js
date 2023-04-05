@@ -41,8 +41,8 @@ const Projects = () => {
                 <h1 className="section-title">Mes projets professionnels</h1>
                 <p>Dans cette section vous trouverez différents projets professionels que j'ai pu faire.</p>
                 <div className="project-list">
-                    {projects_list.map(project => (
-                        <ProjectItem project={project} />
+                    {projects_list.map((project, idx) => (
+                        <ProjectItem key={idx} project={project} />
                     ))}
                 </div>
             </div>

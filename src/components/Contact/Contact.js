@@ -38,22 +38,21 @@ const Contact = () => {
             <div className="contact-main-container">
                 <form method="post" className="form-container" onSubmit={sendEmail}>
                     <div>
-                        <input type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Phil Anthrope" required />
                         <label>Nom</label>
+                        <input type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Phil Anthrope" required />
                     </div>
                     <div>
-                        <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="phil.anthrope@gmail.com" required />
                         <label>Email</label>
+                        <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="phil.anthrope@gmail.com" required />
                     </div>
                     <div>
-                        <input type="text" value={subject} onChange={e => setSubject(e.target.value)} placeholder="Offre..." required />
                         <label>Sujet</label>
+                        <input type="text" value={subject} onChange={e => setSubject(e.target.value)} placeholder="Offre..." required />
                     </div>
                     <div>
-                        <textarea rows="5" cols="33" value={message} onChange={e => setMessage(e.target.value)} required></textarea>
                         <label>Message</label>
+                        <textarea rows="5" cols="33" value={message} onChange={e => setMessage(e.target.value)} required></textarea>
                     </div>
-
                     <input type="submit" value="Envoyer" />
                 </form>
             </div>

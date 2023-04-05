@@ -1,9 +1,9 @@
 import React from "react";
 import "./SkillItem.css"
 
-const SkillItem = ({ skill, idx }) => {
+const SkillItem = ({ skill }) => {
     return (
-        <div key={idx} className="skill-item">{skill}</div>
+        <div className="skill-item">{skill}</div>
     )
 }
 

@@ -1,9 +1,6 @@
 .projects-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 3%);
-  padding-bottom: 10%;
 }
 
 p {
@@ -26,7 +23,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 80%;
+  width: 50%;
   align-items: center;
 }
 
@@ -44,24 +41,8 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 506px) {
-  .projects-title {
-    font-size: 2rem;
-  }
-
-  .introduction h2 {
-    font-size: 1rem;
-  }
-
-  .skills-container h2 {
-    font-size: 1rem
-  }
-
-  .skills-container div {
-    font-size: 1rem;
-  }
-
+@media screen and (max-width: 1510px) {
   .project-list {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 }
