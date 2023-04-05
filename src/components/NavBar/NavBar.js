@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link"
 import "./NavBar.css";
-import useScroll from "./useHideOnScroll";
 const NavBar = () => {
 
-    const { scrollDirection } = useScroll();
     const [isMenuShown, setIsMenuShown] = useState(false)
 
     const showMobileMenu = () => {
@@ -25,7 +23,7 @@ const NavBar = () => {
                 <img src={process.env.PUBLIC_URL + "/images/hamburger_menu.png"} alt="menu" onClick={() => showMobileMenu()} />
                 <NavLink to="/" className="portfolio" exact><span className="port">Port</span><span className="folio">folio</span></NavLink>
             </nav>
-            <nav className={scrollDirection === "down" || !scrollDirection ? "nav-container" : "nav-hidden"} >
+            <nav className="nav-container" >
                 <div className="nav-left">
                     <NavLink to="/" className="portfolio" exact><span className="port">Port</span><span className="folio">folio</span></NavLink>
                 </div>

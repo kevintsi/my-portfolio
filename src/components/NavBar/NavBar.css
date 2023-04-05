@@ -9,11 +9,11 @@
   padding: 20px;
   /* Transition effect when sliding down (and up) */
   width: 100%;
-  position: fixed;
+  position: sticky;
 }
 
 .nav-hidden {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
