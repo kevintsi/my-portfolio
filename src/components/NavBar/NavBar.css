@@ -6,7 +6,6 @@
   top: 0;
   background-color: #ffffff;
   transition: top 0.3s;
-  padding: 20px;
   /* Transition effect when sliding down (and up) */
   width: 100%;
   position: sticky;
@@ -94,6 +93,7 @@
   background-color: #ffffff;
   transition: top 0.3s;
   /* Transition effect when sliding down (and up) */
+
   height: 6%;
   width: 100%;
   position: fixed;
