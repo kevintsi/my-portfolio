@@ -11,7 +11,7 @@ const Home = () => {
             <div className="brief-introduction-container">
                 <div className="heading" >
                     <div className="primary-heading">Bonjour, je m'appelle <strong style={{ color: "#D91E18" }}>Kévin TSI</strong></div>
-                    <p className="secondary-heading">Développeur Web FullStack orienté Frontend</p>
+                    <p className="secondary-heading">Développeur Web FullStack orienté Backend</p>
                 </div>
                 <div className="social-network-container">
                     <div><a href="https://www.linkedin.com/in/k%C3%A9vin-tsi-160381181/"><img src={process.env.PUBLIC_URL + "/images/linkedIn.png"} alt="LinkedIn" /></a></div>
